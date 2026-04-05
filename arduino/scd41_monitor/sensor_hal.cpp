@@ -2,8 +2,8 @@
 
 #include "app_config.h"
 
-#include <Wire.h>
 #include <SensirionI2cScd4x.h>
+#include <Wire.h>
 
 namespace {
 SensirionI2cScd4x sensor;

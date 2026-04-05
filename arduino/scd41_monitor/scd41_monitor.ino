@@ -1,5 +1,3 @@
-#include <Arduino.h>
-
 #include "app_config.h"
 #include "sensor_hal.h"
 
@@ -38,7 +36,7 @@ void setup() {
 
     sensorReady = beginSensor();
     if (!sensorReady) {
-        Serial.println("[boot] sensor init failed; check wiring and include/app_config.h");
+        Serial.println("[boot] sensor init failed; check wiring and app_config.h");
         return;
     }
 
